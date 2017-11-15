@@ -1,0 +1,27 @@
+/*34 HACER UN PROGRAMA QUE LEA LAS CALIFICACIONES DE UN ALUMNO EN 10 ASIGNATURAS LAS ALMACENE EN UN 
+  UN VECTOR Y CALCULE E IMPRIMA SU MEDIA*/
+
+package ej_34_h3;
+
+import java.util.Scanner;
+
+public class ej_34_h3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		 int notas [indice] = new int [10];
+
+		 for (indice = 0; indice <10; indice ++){
+		 
+		 System.out.println("Introduce nota:");
+		 nota=teclado.nexInt();
+		
+		
+		
+		
+	}
+
+}

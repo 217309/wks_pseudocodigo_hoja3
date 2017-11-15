@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+package ej33_h3;
+
+public class ej33_h3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		char [] Caracteres=new char[20];
+		
+		Scanner.teclado = new Scanner(System.in);
+		System.out.println("Nombres");
+		
+		
+		
+		
+	}
+
+}

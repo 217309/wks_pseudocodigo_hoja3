@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+/* 4. Generar una matriz de 5x5 (numérica entera entre -100 y 100) e imprimir el valor mayor y el menor 
+y los lugares donde se encuentran.*/
+
+public class EJ4vector.java {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+{
+	        final int FILAS = 5, COLUMNAS = 5;
+	        Scanner sc = new Scanner(System.in);
+	        int i, j, mayor, menor;
+	        int filaMayor, filaMenor, colMayor, colMenor;
+	        int matriz[][] = new int[FILAS][COLUMNAS];
+
+	  for (i = 0; i <FILAS; i++) {
+	  for (j = 0; j < COLUMNAS; j++) {	        
+
+// hacemos el casting (int) para convertir el mathfloor q es double en int. 	            	
+matriz[i][j] = (int)Math.floor(Math.random()* 201-100);// (maximo - minimo + 1) - minimo. Si maximo - minimo + 1 es 0 nos devolvera el minimo. Y sino se generan numeros entre 0 y 101. //
+																// volver a preguntar de donde viene la expresion!
+			      
+          
+	  }
+	  }//for
+	        System.out.println("valores introducidos:");
+	        for (i = 0; i < matriz; i++) { 
+	            for (j = 0; j < matriz[i]; j++) {
+	                System.out.print(matriz[i][j] + " ");
+	            }
+	            System.out.println();
+	        }
+	        mayor = menor = matriz[0][0];//se toma el primero como mayor y menor
+	        filaMayor = filaMenor = colMayor = colMenor = 0;
+
+	        for (i = 0; i < matriz.length; i++) {  //numero de filas 
+	            for (j = 0; j < matriz[i].length; j++) { // numero de columnas 
+	                if (matriz[i][j] > mayor) {
+	                    mayor = matriz[i][j];
+	                    filaMayor = i;
+	                    colMayor = j;
+	                } else if (matriz[i][j] < menor) {
+	                    menor = matriz[i][j];
+	                    filaMenor = i;
+	                    colMenor = j;
+	                }
+	            } // for colmnas         
+	        }// for filas 
+	        System.out.print("Elemento mayor: " + mayor);
+	        System.out.println(" Fila: "+ filaMayor + " Columna: " + colMayor);
+	        System.out.print("Elemento menor: " + menor);
+	        System.out.println(" Fila: "+ filaMenor + " Columna: " + colMenor);
+	    }
+	
+	}
+
